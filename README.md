@@ -11,7 +11,8 @@ This repository contains a collection of mini cybersecurity tools written in Go.
 * **MD5 PIN Bruteforcer:** An offline hash cracker. Demonstrates brute-forcing concepts by hashing and iterating through 10,000 PIN combinations (0000 to 9999) to find a match for a target MD5 hash using the `crypto/md5` package.
 * **Concurrent TCP Port Scanner:** An ultra-fast, multi-threaded port scanner. Utilizes **Goroutines** and `sync.WaitGroup` to scan hundreds of ports concurrently in seconds, effectively bypassing standard network timeout delays.
 * **Web Directory Scanner (Dirbuster clone):** A tool to find hidden directories and files (e.g., `/admin`, `/backup.zip`). It performs HTTP GET requests and analyzes status codes (200 OK) to discover non-public paths on a web server.
-* **Interactive C2 Shell (Backdoor Prototype):** A remote command interface. It reads commands with arguments via `bufio`, parses them, and executes system commands directly using `os/exec`, returning the output to the terminal. Serves as a foundation for Command & Control (C2) clients.
+* **Interactive C2 Shell (Backdoor Prototype):** A remote command interface. It reads commands with arguments via `bufio`, parses them, and executes system commands directly using `os/exec`, returning the output to the terminal.
+* **XOR Payload Obfuscator:** A data encryption tool. Implements bitwise XOR encryption to hide sensitive strings (like C2 URLs or payloads) from static antivirus analysis, demonstrating in-memory payload decryption.
 
 ## 🚀 How to Run
 
