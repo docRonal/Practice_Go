@@ -29,7 +29,7 @@ func main() {
 				return nil
 			}
 
-			for i := 0; i < len(data); i++ {
+			for i := 0; i < len(data); i++ { //if you want to decode file, just repeat this cycle
 				data[i] = data[i] ^ keyBytes[i%len(keyBytes)]
 			}
 
