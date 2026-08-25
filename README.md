@@ -13,6 +13,7 @@ This repository contains a collection of mini cybersecurity tools written in Go.
 * **Web Directory Scanner (Dirbuster clone):** A tool to find hidden directories and files (e.g., `/admin`, `/backup.zip`). It performs HTTP GET requests and analyzes status codes (200 OK) to discover non-public paths on a web server.
 * **Interactive C2 Shell (Backdoor Prototype):** A remote command interface. It reads commands with arguments via `bufio`, parses them, and executes system commands directly using `os/exec`, returning the output to the terminal.
 * **XOR Payload Obfuscator:** A data encryption tool. Implements bitwise XOR encryption to hide sensitive strings (like C2 URLs or payloads) from static antivirus analysis, demonstrating in-memory payload decryption.
+* **Recursive File Encryptor (Ransomware Simulator):** Explores file system traversal using the `path/filepath` package. It recursively iterates through a specified directory, reading, XOR-encrypting, and overwriting files to demonstrate how ransomware operates at a fundamental level.
 
 ## 🚀 How to Run
 
@@ -20,4 +21,4 @@ Ensure you have [Go](https://go.dev/dl/) installed on your machine.
 Navigate to the directory of the specific project you want to test and execute:
 
 ```bash
-go run main.go
+go run <filename>.go
