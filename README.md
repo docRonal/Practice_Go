@@ -3,7 +3,7 @@
 [![Go Version](https://img.shields.io/badge/Go-1.20+-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![Security Education](https://img.shields.io/badge/Purpose-Educational-green.svg)](#)
 
-This repository contains a collection of mini cybersecurity tools written in Go. The projects are designed to explore the Go programming language alongside core ethical hacking and defensive security concepts, covering cryptography, concurrent networking, system interactions, and file integrity.
+This repository contains a collection of mini cybersecurity tools written in Go. The projects are designed to explore the Go programming language alongside core ethical hacking and defensive security concepts, covering cryptography, concurrent networking, system interactions, file integrity, and threat intelligence.
 
 ## 🛠️ Projects Included
 
@@ -15,6 +15,7 @@ This repository contains a collection of mini cybersecurity tools written in Go.
 * **XOR Payload Obfuscator:** A data encryption tool implementing bitwise XOR encryption to hide sensitive strings from static antivirus analysis.
 * **Recursive File Encryptor (Ransomware Simulator):** Explores file system traversal using the `path/filepath` package to read, XOR-encrypt, and overwrite files.
 * **Continuous FIM (File Integrity Monitor) Daemon:** A defensive background service. It continuously calculates and monitors the SHA-256 cryptographic hash of critical files using `crypto/sha256` in an infinite loop, alerting administrators immediately upon unauthorized modifications.
+* **VirusTotal API Integrator (Threat Intelligence):** A tool that interacts with the VirusTotal v3 API to analyze IP addresses. It securely passes API keys via HTTP headers, handles rate-limiting and authentication HTTP status codes, and unmarshals complex JSON responses to extract security engine detection stats.
 
 ## 🚀 How to Run
 
