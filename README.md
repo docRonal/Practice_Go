@@ -3,7 +3,18 @@
 [![Go Version](https://img.shields.io/badge/Go-1.20+-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![Security Education](https://img.shields.io/badge/Purpose-Educational-green.svg)](#)
 
-This repository contains a collection of mini cybersecurity tools written in Go. The projects are designed to explore the Go programming language alongside core ethical hacking and defensive security concepts, covering cryptography, concurrent networking, system interactions, file integrity, and threat intelligence.
+# ⚠️ Disclaimer
+
+**EDUCATIONAL PURPOSES ONLY.
+
+**All tools and scripts in this repository are provided strictly for educational purposes and ethical hacking practice. They are designed to help understand system vulnerabilities and **improve defensive security postures.
+
+    Do NOT use these tools on any system, network, or application that you do not own or do not have explicit, documented permission to test.
+
+    The author assumes no responsibility and shall not be held liable for any illegal, malicious, or unauthorized use of this code or any damage caused by it.
+
+
+This repository contains a collection of mini cybersecurity tools written in Go. The projects are designed to explore the Go programming language alongside core ethical hacking and defensive security concepts, covering cryptography, concurrent networking, system interactions, file integrity, and threat intelligence API integrations.
 
 ## 🛠️ Projects Included
 
@@ -15,7 +26,8 @@ This repository contains a collection of mini cybersecurity tools written in Go.
 * **XOR Payload Obfuscator:** A data encryption tool implementing bitwise XOR encryption to hide sensitive strings from static antivirus analysis.
 * **Recursive File Encryptor (Ransomware Simulator):** Explores file system traversal using the `path/filepath` package to read, XOR-encrypt, and overwrite files.
 * **Continuous FIM (File Integrity Monitor) Daemon:** A defensive background service. It continuously calculates and monitors the SHA-256 cryptographic hash of critical files using `crypto/sha256` in an infinite loop, alerting administrators immediately upon unauthorized modifications.
-* **VirusTotal API Integrator (Threat Intelligence):** A tool that interacts with the VirusTotal v3 API to analyze IP addresses. It securely passes API keys via HTTP headers, handles rate-limiting and authentication HTTP status codes, and unmarshals complex JSON responses to extract security engine detection stats.
+* **Threat Intelligence IP Analyzer:** An OSINT tool that queries the VirusTotal API (`v3/ip_addresses`) to retrieve reputation data. It parses nested JSON responses using `encoding/json` and implements robust HTTP status code checking for rate-limiting and authentication errors.
+* **Malware Hash Analyzer:** A Threat Intelligence utility that checks SHA-256 file hashes against the VirusTotal API (`v3/files`) to determine if a file is flagged as malicious by leading antivirus engines.
 
 ## 🚀 How to Run
 
