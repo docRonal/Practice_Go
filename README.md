@@ -5,9 +5,10 @@
 
 # ⚠️ Disclaimer
 
-**EDUCATIONAL PURPOSES ONLY.
+* **EDUCATIONAL PURPOSES ONLY.
 
-**All tools and scripts in this repository are provided strictly for educational purposes and ethical hacking practice. They are designed to help understand system vulnerabilities and **improve defensive security postures.
+* **All tools and scripts in this repository are provided strictly for educational purposes and ethical hacking practice. They are designed to help understand system vulnerabilities and
+  improve defensive security postures.
 
     Do NOT use these tools on any system, network, or application that you do not own or do not have explicit, documented permission to test.
 
