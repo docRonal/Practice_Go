@@ -5,14 +5,14 @@
 
 # ⚠️ Disclaimer
 
-* **EDUCATIONAL PURPOSES ONLY.
+**EDUCATIONAL PURPOSES ONLY.**
 
-* **All tools and scripts in this repository are provided strictly for educational purposes and ethical hacking practice. They are designed to help understand system vulnerabilities and
-  improve defensive security postures.
+**All tools and scripts in this repository are provided strictly for educational purposes and ethical hacking practice. They are designed to help understand system vulnerabilities and
+  improve defensive security postures.**
 
-    Do NOT use these tools on any system, network, or application that you do not own or do not have explicit, documented permission to test.
+  * Do NOT use these tools on any system, network, or application that you do not own or do not have explicit, documented permission to test.
 
-    The author assumes no responsibility and shall not be held liable for any illegal, malicious, or unauthorized use of this code or any damage caused by it.
+  * The author assumes no responsibility and shall not be held liable for any illegal, malicious, or unauthorized use of this code or any damage caused by it.
 
 
 This repository contains a collection of mini cybersecurity tools written in Go. The projects are designed to explore the Go programming language alongside core ethical hacking and defensive security concepts, covering cryptography, concurrent networking, system interactions, file integrity, and threat intelligence API integrations.
