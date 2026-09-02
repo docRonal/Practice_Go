@@ -29,7 +29,7 @@ This repository contains a collection of mini cybersecurity tools written in Go.
 * **Continuous FIM (File Integrity Monitor) Daemon:** A defensive background service. It continuously calculates and monitors the SHA-256 cryptographic hash of critical files using `crypto/sha256` in an infinite loop, alerting administrators immediately upon unauthorized modifications.
 * **Threat Intelligence IP Analyzer:** An OSINT tool that queries the VirusTotal API (`v3/ip_addresses`) to retrieve reputation data. It parses nested JSON responses using `encoding/json` and implements robust HTTP status code checking for rate-limiting and authentication errors.
 * **Malware Hash Analyzer:** A Threat Intelligence utility that checks SHA-256 file hashes against the VirusTotal API (`v3/files`) to determine if a file is flagged as malicious by leading antivirus engines.
-
+* **Web Server Log Analyzer (IDS/WAF Prototype):** A Blue Team defensive tool that parses HTTP web server logs (e.g., `access.log`). It uses the `regexp` package to detect common web application attacks such as SQL Injections, Cross-Site Scripting (XSS), and Path Traversal attempts in real-time.
 ## 🚀 How to Run
 
 Ensure you have [Go](https://go.dev/dl/) installed on your machine.
