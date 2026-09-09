@@ -30,6 +30,8 @@ This repository contains a collection of mini cybersecurity tools written in Go.
 * **Threat Intelligence IP Analyzer:** An OSINT tool that queries the VirusTotal API (`v3/ip_addresses`) to retrieve reputation data. It parses nested JSON responses using `encoding/json` and implements robust HTTP status code checking for rate-limiting and authentication errors.
 * **Malware Hash Analyzer:** A Threat Intelligence utility that checks SHA-256 file hashes against the VirusTotal API (`v3/files`) to determine if a file is flagged as malicious by leading antivirus engines.
 * **Web Server Log Analyzer (IDS/WAF Prototype):** A Blue Team defensive tool that parses HTTP web server logs (e.g., `access.log`). It uses the `regexp` package to detect common web application attacks such as SQL Injections, Cross-Site Scripting (XSS), and Path Traversal attempts in real-time.
+* **PNG Steganography Tool (Data Obfuscation):** A utility that hides secret text inside the pixels of a PNG image without altering its visual appearance. Uses the LSB (Least Significant Bit) technique on the Red color channel to embed and extract binary data.
+* **Clipboard Data Monitor (Red Team Payload):** A background system utility that continuously monitors the OS clipboard for text changes. It demonstrates OS-level interaction and uses RegEx pattern matching to identify and interact with specific data structures (like cryptocurrency addresses) on the fly.
 ## 🚀 How to Run
 
 Ensure you have [Go](https://go.dev/dl/) installed on your machine.
