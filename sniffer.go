@@ -5,6 +5,7 @@ import(
 "log"
 
 "github.com/google/gopacket"
+"github.com/google/gopacket/layers"
 "github.com/google/gopacket/pcap"
 
 )
@@ -25,6 +26,12 @@ defer handle.Close()
 packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
 
 	for packet := range packetSource.Packets(){
-		fmt.Println(packet)
+		ipLayer := packet.Layer(layers.LayerTypeIPv4)
+
+		
+		if ipLayer!= nil{
+			ip, _ := ipLayer.(*layers.IPv4)
+			fmt.Println("[IP] the person send %s -> Get %s\n", ip.SrcIP,ip.DstIP)
+		}
 	}
 }
